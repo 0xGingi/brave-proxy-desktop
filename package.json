@@ -1,0 +1,49 @@
+{
+  "name": "0xgingi-search",
+  "version": "1.0.0",
+  "license": "GLWTPL",
+  "author": "0xGingi <0xGingi@0xGingi.com",
+  "homepage": "https://0xgingi.com",
+  "icon": "images/icon.png",
+  "repository": "https://github.com/0xGingi/brave-proxy-desktop",
+  "description": "Brave Search Proxy",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [
+    "Brave",
+    "Brave Search",
+    "Proxy",
+    "Seach Engine"
+  ],
+  "build": {
+    "appId": "com.0xgingi.brave",
+    "productName": "0xgingi-search",
+    "copyright": "Copyright 2023 0xGingi",
+    "mac": {
+      "category": "public.app-category.productivity",
+      "icon": "images/icon.png"
+    },
+    "win": {
+      "icon": "images/icon.png",
+      "target": [
+	"nsis",
+        "portable"
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "maintainer": "com.0xgingi.brave",
+      "category": "Utility",
+      "vendor": "0xGingi",
+      "description": "Brave Search Engine Proxy"
+	} },
+  "devDependencies": {
+    "electron": "^25.6.0",
+    "electron-builder": "^24.6.3"
+  }
+}
